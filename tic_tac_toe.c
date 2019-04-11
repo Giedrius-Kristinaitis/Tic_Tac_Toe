@@ -10,7 +10,7 @@ void print_grid(char grid[3][3]) {
 	for (y = 0; y < 3; y++) {
 		for (x = 0; x < 3; x++) {
 			if (grid[y][x] == 'x' || grid[y][x] == 'o') {
-			    printf("%c", grid[y][x]);
+				printf("%c", grid[y][x]);
 			} else {
 				printf(" ");	
 			}
@@ -21,7 +21,7 @@ void print_grid(char grid[3][3]) {
 		}
 		
 		if (y < 2) {
-		    printf("\n-----\n");
+			printf("\n-----\n");
 		} else {
 			printf("\n");
 		}
@@ -51,7 +51,7 @@ char insert_value_to_grid(char grid[3][3], char value) {
 	y = get_coordinate_input('y');
 	
 	if (grid[y][x] != 'x' && grid[y][x] != 'o') {
-	    grid[y][x] = value;
+		grid[y][x] = value;
 	} else {
 		printf("This cell is already taken, enter another one\n");
 		return insert_value_to_grid(grid, value);
