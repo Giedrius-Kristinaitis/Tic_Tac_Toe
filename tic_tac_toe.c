@@ -112,7 +112,7 @@ bool grid_full(char grid[3][3]) {
 	
 	for (y = 0; y < 3; y++) {
 		for (x = 0; x < 3; x++) {
-		    if (grid[y][x] != 'x' && grid[y][x] != 'o') {
+			if (grid[y][x] != 'x' && grid[y][x] != 'o') {
 				return false;
 			}
 		}
